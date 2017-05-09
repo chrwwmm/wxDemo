@@ -1,0 +1,31 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <view class="search">
+        <input id="search_value" type="text" bindchange="dataChange" placeholder="书名、编号"></input>
+        <view class="guifan-search" bindtap="dosearch">搜索</view>
+    </view>
+  <block wx:for="{{imgUrls}}" wx:key="">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="guifan">
+
+<view class="guifan-biaoti">常用规范</view>
+
+<!--用name 定义模版-->  
+<template name="msgTemp">  
+<navigator class="guifan-item" url="{{url}}">  
+    <view class="guifan-title">{{name}}</view>  
+    <view class="guifan-bianhao">编号：{{number}}</view>
+</navigator>  
+</template>
+  
+<view wx:for="{{msgList}}" wx:key="">  
+    <!--用is 使用模版-->  
+    <template is="msgTemp" data="{{...item}}"/> 
+</view>   
+
+</view> 

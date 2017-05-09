@@ -1,0 +1,26 @@
+<view class="tab"> 
+    <view class="tab-left">
+    	<block wx:for="{{allData}}" wx:key="item" wx:for-index="id">
+    		<view bindtap="tabFun" class="left-item {{tabArr.curHdIndex==id? 'active' : ''}}" data-id="{{id}}">{{item.name}}</view> 
+    	</block>
+        <view class="btn">
+            <button>建筑学院APP</button>
+            <button>福利</button>
+        </view>
+    </view>
+ 
+	<view class="tab-right"> 
+		<view wx:for="{{allData}}" wx:key="" wx:for-item="item1" wx:for-index="id" >
+			<view wx-if="{{id!=1}}" wx:for="{{item1.list}}" class="right-item {{tabArr.curHdIndex==id? 'active' : ''}}" wx:key="" wx:for-item="item">
+				<view catchtap="onTapToDetail" data-post-id="{{item.id}}" class="ri-item" style="background: url({{item.img?item.img:'../../images/lunbo.jpg'}}) no-repeat;background-size: 100%;">
+				{{item.name}}
+				</view>
+			</view>
+			<view wx-if="{{id==1}}" wx:for="{{item1.list}}" class="right-item {{tabArr.curHdIndex=='1'? 'active' : ''}}" wx:key="item">
+				<navigator url="xmlist/xmlist" class="ri-item-diqu" style="background: url({{item.img?item.img:'../../images/lunbo.jpg'}}) no-repeat;background-size: auto;">
+				{{item.name}}
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>

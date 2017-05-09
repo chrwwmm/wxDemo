@@ -1,0 +1,24 @@
+<view class="title">国家规范-建筑专业</view>
+<view class="search">
+        <input id="search_value" type="text" placeholder="搜索当前规范"></input>
+</view>
+
+<view class="fenge"></view>
+
+<view class="guifan">
+
+<!--用name 定义模版-->  
+<template name="msgTemp">  
+<view catchtap="onTapToItem" id="{{_id}}" class="guifan-item" url="lmitem/lmitem">  
+    <view class="guifan-title">{{name}}</view>  
+    <view class="guifan-bianhao">编号：{{number}}</view>
+</view>  
+</template>
+  
+<view wx:for="{{allData}}" wx:key="">  
+    <!--用is 使用模版-->  
+    <template is="msgTemp" data="{{...item}}"/> 
+</view>   
+
+</view> 
+

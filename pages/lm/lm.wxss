@@ -1,0 +1,70 @@
+/**lm.wxss**/
+
+.tab{ 
+    height: ;
+    display: flex; 
+    flex-direction: row; 
+    background-color: #eee;
+    border: ;
+} 
+.tab-left{ 
+    width: 35%;
+    height: 100%;
+    background-color: #eee;
+    position: fixed;
+} 
+.tab-left .left-item{     
+    color:#aaa;
+    background-color: #eee;
+    line-height: 260%; 
+    font-size: 28rpx;
+    text-align: center;
+} 
+.tab-left .active{ 
+    color: #000; 
+    font-weight:bold;
+    background-color: #fff;
+} 
+.tab-left .btn{
+    width: 100%;
+    border: ;
+    position: absolute;
+    bottom: 1rpx;
+}
+.tab-left .btn button{
+    width: 80%;
+    font-size: 24rpx;
+    color:#aaa;
+    background-color: #eee;
+    margin-bottom: 30rpx;
+    border: 1px solid #ccc;
+    border-radius: 40rpx;
+}
+.tab-left .btn button:active{
+    background-color: #ccc; 
+}
+.tab-right{ 
+    width: 65%; 
+    position: absolute;
+    left: 35%;
+} 
+.tab-right .right-item{
+    display: none;  
+}  
+.tab-right .right-item .ri-item{ 
+    font-weight:bold;
+    line-height: 500%;
+    text-align: center;
+    color: #fff;
+} 
+.tab-right .right-item .ri-item-diqu{
+    width: 50%;
+    float: left;
+    font-weight:bold;
+    line-height: 500%;
+    text-align: center;
+    color: #fff;
+}
+.tab-right .right-item.active{ 
+    display: block; 
+}

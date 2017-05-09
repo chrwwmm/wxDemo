@@ -1,0 +1,13 @@
+/* pages/lm/lmlist/lmitem/lmitem.wxss */
+.jianzhu{
+    background-color: #eee;
+}
+.item{
+    width: 90%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    margin: 0 auto;
+    border-bottom: 1rpx solid #ccc;
+}

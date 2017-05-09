@@ -1,0 +1,60 @@
+.slide-image{
+    width: 100%;
+}
+.search{
+    width: 80%;
+    height: 64rpx;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1rpx solid #fff;
+    border-radius: 40rpx;
+    position: absolute;
+    top: 80rpx;
+    left: 10%;
+    z-index: 100;
+}
+.search input {
+    background: url(../../images/search_logo.png) no-repeat 125rpx 18rpx;
+    background-size: 30rpx;
+    background-repeat: no-repeat;
+    color: #898989;
+    width: 80%;
+    height: 64rpx;
+    line-height: 64rpx;
+    margin: 0 auto;
+    border: ;
+    font-size: 28rpx;
+    text-indent: 185rpx;
+}
+
+.guifan{
+    width: 90%;
+    margin: 50rpx auto;
+}
+.guifan-biaoti{
+    height: 70rpx;
+    color: #898989;
+    font-size: 28rpx;
+}
+.guifan-item{
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #ccc;
+}
+.guifan-title{
+    height: 60rpx;
+    color: #000;
+    font-size: 28rpx;
+}
+.guifan-bianhao{
+    height: 50rpx;
+    color: #898989;
+    font-size: 24rpx;
+}
+.guifan-search{
+	background:#eee;
+	margin-top:30rpx;
+	text-align:center;
+	width:60%;
+	margin:30rpx 20%;
+	border-radius:10rpx;
+}

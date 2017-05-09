@@ -1,0 +1,16 @@
+<view class="jianzhu">
+
+<!--用name 定义模版-->  
+<template name="itemTemp">  
+<navigator class="item" url="{{url}}">  
+    <view class="">{{title}}</view>  
+</navigator>  
+<text>{{text}}</text>
+</template>
+  
+<view wx:key="{{itemList}}">  
+    <!--用is 使用模版-->  
+    <template is="itemTemp" data="{{...item}}"/> 
+</view>   
+
+</view> 

@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/lm/lm",
+    "pages/lm/lmlist/lmlist",
+    "pages/lm/lmlist/lmitem/lmitem",
+    "pages/xm/xm",
+    "pages/xm/xmlist/xmlist",
+    "pages/xm/xmlist/xmitem/xmitem",
+    "pages/search/search",
+    "pages/search/001/001",
+    "pages/sc/sc"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",  
+    "selectedColor": "#2c2c2c", 
+    "backgroundColor":"#fff",
+    "borderStyle":"#dbdbdb",  
+    "list": [{  
+      "selectedIconPath": "images/lm(1).png",  
+      "iconPath": "images/lm.png",  
+      "pagePath": "pages/lm/lm",  
+      "text": "类目"  
+    }, {  
+      "selectedIconPath": "images/xm(1).png",  
+      "iconPath": "images/xm.png",  
+      "pagePath": "pages/xm/xm",  
+      "text": "项目"  
+    }, {  
+      "selectedIconPath": "images/cgf(1).png",  
+      "iconPath": "images/cgf.png",  
+      "pagePath": "pages/search/search",  
+      "text": "查规范"  
+    }, {  
+      "selectedIconPath": "images/sc(1).png",  
+      "iconPath": "images/sc.png",  
+      "pagePath": "pages/sc/sc",  
+      "text": "收藏"  
+    }] 
+  },
+  "debug": true
+}
